@@ -1,11 +1,9 @@
 import pysftp, sys
 cnopts = pysftp.CnOpts()
 cnopts.hostkeys = None
-<<<<<<< HEAD
+
 cinfo = {'cnopts':cnopts, 'host':'oz-ist-linux-fa18-411', 'username':'ChristopherValko', 'password':'Lkjhlkjh12', 'port':103}
-=======
-cinfo = {'cnopts':cnopts, 'host':'oz-ist-linux-fa18-411', 'username':'ChristopherValko', 'password':'Lkjhlkjh12', 'port':101}
->>>>>>> 854c7057c2eecbe1b2bd8104eb6869b31b8da436
+
 try:
     with pysftp.Connection(**cinfo) as sftp:
         print("Connection made")
