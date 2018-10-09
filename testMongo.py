@@ -12,4 +12,4 @@ try:
     post_id = collection.insert_one(post)
 except:
     e = sys.exc_info()[0]
-    print("error: %s" % e
+    print("error: %s" % e)
